@@ -4,65 +4,52 @@
         "ignore": [],
         "include": []
     },
+    "miniprogramRoot": "miniprogram/",
+    "compileType": "miniprogram",
+    "projectname": "iweather",
     "setting": {
+        "useCompilerPlugins": [
+            "typescript",
+            "sass"
+        ],
         "urlCheck": true,
-        "scopeDataCheck": false,
         "coverView": true,
-        "es6": false,
+        "es6": true,
         "postcss": true,
-        "compileHotReLoad": false,
         "lazyloadPlaceholderEnable": false,
         "preloadBackgroundData": false,
         "minified": true,
         "autoAudits": false,
-        "newFeature": false,
         "uglifyFileName": false,
         "uploadWithSourceMap": true,
-        "useIsolateContext": false,
-        "nodeModules": false,
         "enhance": true,
         "useMultiFrameRuntime": true,
-        "useApiHook": true,
-        "useApiHostProcess": true,
         "showShadowRootInWxmlPanel": true,
-        "packNpmManually": false,
-        "packNpmRelationList": [],
+        "packNpmManually": true,
+        "packNpmRelationList": [
+            {
+                "packageJsonPath": "./package.json",
+                "miniprogramNpmDistDir": "./miniprogram"
+            }
+        ],
         "minifyWXSS": true,
-        "disableUseStrict": false,
-        "ignoreUploadUnusedFiles": true,
-        "minifyWXML": true,
+        "useStaticServer": true,
+        "showES6CompileOption": false,
         "checkInvalidKey": true,
         "babelSetting": {
             "ignore": [],
             "disablePlugins": [],
             "outputPath": ""
         },
-        "showES6CompileOption": false,
-        "useCompilerPlugins": false,
-        "useStaticServer": true
+        "disableUseStrict": false,
+        "minifyWXML": true
     },
-    "compileType": "miniprogram",
-    "libVersion": "2.24.0",
-    "appid": "wx5892b47170d2c6e8",
-    "projectname": "iweather-mini",
-    "miniprogramRoot": "miniprogram/",
-    "cloudfunctionRoot": "cloudfunctions/",
-    "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
-    "condition": {
-        "plugin": {
-            "list": []
-        },
-        "game": {
-            "list": []
-        },
-        "gamePlugin": {
-            "list": []
-        },
-        "miniprogram": {
-            "list": []
-        }
-    },
+    "simulatorType": "wechat",
+    "simulatorPluginLibVersion": {},
+    "condition": {},
     "srcMiniprogramRoot": "miniprogram/",
+    "appid": "wx5892b47170d2c6e8",
+    "libVersion": "2.24.1",
     "editorSetting": {
         "tabIndent": "insertSpaces",
         "tabSize": 4
